@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/javascript">
+        function createMessage(duration, firmName)
+        {
+            var msg = 'Eu sunt angajat de ' + duration + ' ' + (duration > 1 ? 'ani' : 'an') + ' in ' + firmName + '!';
+            return msg;
+        }
+
+        function showMessage(message)
+        {
+            //console.log(message);
+            document.getElementById('container').innerHTML = 
+            document.getElementById('container').innerHTML + '<br>' + message;
+        }
+
+        var firstName = 'Gabi';
+        var lastName = 'Bartalis';
+        showMessage(firstName);
+        showMessage(lastName);
+        showMessage(firstName + ' ' + lastName);
+        showMessage(firstName, lastName, 'abc', 123);
+
+        var city = 'Brasov';
+        showMessage('Numele meu este ' + firstName + ' ' + lastName + ' si sunt din ' + city + '!');
+
+        var firm = 'Projects Abroad';
+        var duration = 10;
+        showMessage('Eu sunt angajat de ' + duration + ' ani in ' + firm + '!');
+
+        showMessage('Eu sunt angajat de ' + duration + ' ' + (duration > 1 ? 'ani' : 'an') + ' in ' + firm + '!');
+
+        var message = createMessage(duration, firm);
+
+        showMessage(message);
+
+        duration++;
+        message = createMessage(duration, firm);
+        showMessage(message);
+        //functii de stringuri      
+          showMessage('John Doe'.length);
+          showMessage(message.length);
+          showMessage('John Doe'.replace('John', 'Jane'));
+          showMessage(message.replace(duration, duration * 2));
+          showMessage('John Snow'.substr(0, 3));  //extrag un string din pozitia indicata si ia un numar de caractere   
+          showMessage('John Snow'.substring(0, 6));//extrage un string intre 2 indexuri pana la ultima pozitie
+          showMessage(message.substr(10, 5));
+          showMessage(message.toUpperCase());
+          showMessage(message.toLowerCase());
+          showMessage('<' + '   abc   ' + '>'.trim()); // scoate spatii
+          var phrase = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry';
+          showMessage(phrase.indexOf('orem')); //returneaza pozitia stringului cautat
+          showMessage(phrase.lastIndexOf('e')); //returneaza pozitia ultimului caracter cautat
+          showMessage(phrase.indexOf('i', 5)); //returneaza pozitia stringului cautat de la pozitia 5
+          
+          showMessage(phrase.substring(0, phrase.indexOf(' ')));
+
+          var posFirstSpace = phrase.indexOf(' ');
+          var posSecondSpace = phrase.indexOf(' ', posFirstSpace + 1);
+          var secondWord = phrase.substring(posFirstSpace + 1, posSecondSpace);
+
+          showMessage('<' + secondWord + '>');
+
+
+    </script>
+</body>
+</html>
