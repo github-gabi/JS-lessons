@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson3</title>
+	<style type="text/css">
+		#demo {
+			font-size: 24px;
+			padding: 20px;
+		}
+
+	</style>
+</head>
+<body>
+    <div id="demo"></div>
+	<script type="text/javascript">
+		var firsName = "Ana";
+		var secondName = "Cristache";
+		firsName == secondName;
+		var firstNumber = 1;
+		var secondNumber = '1';
+		firstNumber = secondNumber;
+        function show(message)
+        {
+            document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + '<br>' + message;
+        }
+       // show('test');
+       if (2 == '1') {
+       		show('1 este egal cu \'1\'');
+       } else {
+       	show('alt mesaj');
+       }
+       var firstNumber = 50;
+       var secondNumber = 100;
+		if (firstNumber > secondNumber) {
+			show(firstNumber);
+		} else {
+			show(secondNumber);
+		}
+		var firstName = 'Bubico';
+       	var secondName = 'Ocibub';
+		if (firstName > secondName) {
+			show(firstName);
+			show(secondName);
+		} else {
+			show(secondName + ', ' + firstName + '<br><br><br>');
+		}
+		var nambar = 7;
+		if (nambar == 0) {
+			show('sac nu sunt 0');
+		} else if (nambar % 2 == 0) {
+			show(nambar + 'sunt o para');
+		} else {
+			show(nambar + ' sunt o impara' + '<br><br>');
+		}
+		var nambar;
+		for (nambar = 1; nambar <= 5; nambar++) {
+			show(nambar + '<br><br>');
+		}
+		var text = 'bla blo blu';
+		// show(text[0]);
+		// show(text[1]);
+		// show(text[2]);
+		// show(text[3]);
+		// show(text[4]);
+
+		// var textLength = text.length;
+		// for (var i = 0; i < textLength; i++) {
+		// 	show(text[i]);
+		// }
+		var textLength = text.length;
+		for (var i = 0; i < textLength; i++) {
+			//show('caracterul de pe pozitia ' + i + ' este: ' + text[i]);
+			show('caracterul de pe pozitia ' + (i + 1) + ' este: ' + text[i]);
+			show('<br><br>');
+		}
+		for (var i = textLength - 1; i >= 0; i--) {
+			show('caracterul de pe pozitia ' + (i + 1) + ' este: ' + text[i]);
+		}
+		var nambar = prompt('introdu un mesaj de la 0 la 10');
+		show(nambar);
+
+	</script>
+</body>
+</html>
