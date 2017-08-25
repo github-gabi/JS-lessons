@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson4</title>
+
+    <style type="text/css">
+    
+		.tablaDeSah {
+            border-collapse: collapse;
+        }
+
+		.tablaDeSah td {
+            width: 50px;
+            height: 50px;
+        }
+
+		.tablaDeSah  tr:not(:last-child) td:not(:first-child) {
+            border: 1px solid #000000;
+        }
+
+        .tablaDeSah tr:not(:last-child):nth-child(2n+1) td:not(:first-child):nth-child(2n+1),
+        .tablaDeSah tr:not(:last-child):nth-child(2n) td:not(:first-child):nth-child(2n) {
+            background: #000000;
+        }
+
+        .tablaDeSah tr:last-child td,
+        .tablaDeSah tr:not(:last-child) td:first-child:after {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .tablaDeSah {
+            counter-reset: section 9;
+        }
+
+        .tablaDeSah tr:not(:last-child) td:first-child:after {
+            counter-increment: section -1;
+            content: counter(section);
+            display: block;
+        }
+
+
+	</style>
+</head>
+<body>
+<table class="tablaDeSah">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+    </tr>
+</table>
+
+	
+</body>
+</html>

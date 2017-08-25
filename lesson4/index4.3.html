@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson4</title>
+
+	<style type="text/css">
+		#demo {
+			font-size: 24px;
+			padding: 20px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	function show(message)
+	{
+		document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + '<br>' + message;
+	}
+
+
+    function isPrime(n)
+    {
+
+        if (n <= 1) {
+
+            return false;
+            
+        }
+
+        if (n == 2 || n == 3) {
+
+            return true;
+
+        }
+        var halfN = Math.floor(n / 2);
+        
+        for (var i = 2; i <= halfN; i++) {
+
+            if (n % i == 0) {
+
+                return false;
+
+            }
+
+        }
+
+        return true;
+
+    }
+
+    for (var i = 2; i <= 100; i++) {
+
+        if (isPrime(i)) {
+
+            show(i);
+
+        }
+    }
+
+    show(isPrime(7));
+
+</script>
+	
+</body>
+</html>

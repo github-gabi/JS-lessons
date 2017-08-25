@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson4</title>
+
+	<style type="text/css">
+		#demo {
+			font-size: 24px;
+			padding: 20px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="demo"></div>
+<script type="text/javascript">
+	function show(message)
+	{
+		document.getElementById('demo').innerHTML = document.getElementById('demo').innerHTML + '<br>' + message;
+	}
+
+
+    function factorial(n)
+    {
+        if (n < 0) {
+
+        return '"nu se poate" Mada';
+
+        }
+
+        if (n == 0 || n == 1) {
+
+            return 1;
+
+        }
+
+        var fact = 1;
+
+        for (var i = 2; i <= n; i++) {
+
+           // show(i);
+           fact = fact * i;
+           // fact*=i;
+
+        }
+
+        return fact;
+    }
+
+    var number = 222;
+    show(factorial(number));
+
+
+</script>
+	
+</body>
+</html>
