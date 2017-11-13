@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+<div id="container"></div>
+
+<script>
+
+    function show(message) {
+        document.getElementById('container').innerHTML = document.getElementById('container') + '<br>' + message;
+    }
+
+
+    var name = 'Maria';
+    var name = 'Gigel';
+    var firma = 'ICCO';
+    var an = 1999;
+
+    function text(name, firma, an) {
+       var msg = name + ' ' + 'lucreaza la ' + firma + ' din ' + an;
+         return msg;
+    }
+
+    show(text(name, firma, an));
+
+</script>
