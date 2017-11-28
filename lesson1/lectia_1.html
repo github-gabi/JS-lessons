@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        * {font-size: 28px;}
+    </style>
 </head>
 <body>
 </body>
@@ -12,7 +15,7 @@
 <script>
 
     function show(message) {
-        document.getElementById('container').innerHTML = document.getElementById('container') + '<br>' + message;
+        document.getElementById('container').innerHTML = document.getElementById('container').innerHTML + '<br>' + message;
     }
 
 
@@ -27,5 +30,12 @@
     }
 
     show(text(name, firma, an));
+    show(text(name, firma, an).length);
+    show(text(name, firma, an).replace(name, 'Maria'));
+    show(text(name, firma, an).replace(an, an/2));
+    show(text(name, firma, an).indexOf("ICCO"));
+    show(text(name, firma, an).indexOf(" "));
+    show(text(name, firma, an).lastIndexOf(" "));
+    show(text(name, firma, an).indexOf(" ", 7));
 
 </script>
