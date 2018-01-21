@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--Scrieti un script care sa transforme un string dupa modelul urmator: 'Robin Singh from USA.' -> 'robin-singh-from-usa'
+Din cerinta problemei observam ca avem nevoie de urmatoarele: - o variabila de tip string in care sa punem textul - o functie
+care sa scoata punctele / semnele de punctuatie - o functie care sa inlocuiasca spatiile cu '-' - o functie care le combina
+pe cele doua de mai sus si care converteste textul la litere mici Pentru o mai buna organizare a codului vom grupa la inceputul
+scriptului toate functiile. -->
+
+    <div id="container"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+    function show(message) {
+        $('#container').html($('#container').html() + '<br>' + message);
+    }
+
+    var phrase = "'Lorem, ipsum... dolor! sit amet?'";
+
+    show(phrase + '<br>');
+
+    var phraseWithoutMarks = phrase.replace(/[.,!?]/g, '');
+
+    show(phraseWithoutMarks + '<br>');
+
+    var phraseReplaceSpaces = phraseWithoutMarks.replace(/ /g, '-');
+
+    show(phraseReplaceSpaces + '<br>');
+
+    phraseReplaceSpaces = phraseReplaceSpaces.toLowerCase();
+
+    show(phraseReplaceSpaces);
+
+</script>
+
+
+
+</body>
+</html>
