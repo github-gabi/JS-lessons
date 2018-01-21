@@ -1,0 +1,27 @@
+.container {
+<<<<<<< HEAD
+    border: 1px solid #FFCACA;
+=======
+    border: 5px solid #00F;
+>>>>>>> a2381017f66ac4a648c6df3f9ecf2a2094016119
+    width: 75%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container .item {
+<<<<<<< HEAD
+    border: 1px solid #AEAEAE;
+=======
+    border: 1px solid #0F0;
+>>>>>>> a2381017f66ac4a648c6df3f9ecf2a2094016119
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> a2381017f66ac4a648c6df3f9ecf2a2094016119
